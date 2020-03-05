@@ -9,8 +9,8 @@
     this.noteList.allNotes.forEach(element => {
       result += "<li><div>" + element.printText() + "</div></li>"
     });
-    result = "<ul>" + result + "</ul>" 
-    return result
+    result2 = "<ul>" + result + "</ul>" 
+    return result2
   };
 
 

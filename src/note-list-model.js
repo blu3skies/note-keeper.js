@@ -6,7 +6,7 @@
   }
 
   NoteList.prototype.inputNote = function(note) {
-    this.allNotes.push(note)
+    this.allNotes.push(new Note(note))
   };
 
   exports.NoteList = NoteList;
