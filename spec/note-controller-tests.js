@@ -1,10 +1,9 @@
 describe("Note Controller", () => {
   it("note can be instantiated", () => {
-    
-    var noteList = new NoteList();
-    noteList.inputNote("this is a test")
-    var controller = new NoteController(noteList)
-    expect(controller.noteList.allNotes[0].printText()).toBe("this is a test")
-
+    noteController.noteList.inputNote('Favourite drink: not seltzer')
+    noteController.printList()
+    expect(document.getElementById('app').innerHTML).toBe("<ul><li><div>Favourite drink: not</div></li></ul>")
   })
+
+
 })

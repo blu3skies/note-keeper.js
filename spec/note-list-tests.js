@@ -5,5 +5,6 @@ describe("NoteList", () =>  {
     var noteList = new NoteList();
     noteList.inputNote("Hi")
     expect(noteList.allNotes[0].printText()).toBe("Hi")
+    expect(noteList.allNotes[0].id).toBe(0)
   })
 })
